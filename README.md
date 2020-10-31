@@ -1,14 +1,19 @@
 # rice
 
 ### Software<sup>1</sup>
-* Window manager: [dwm](https://github.com/keeganjk/dwm) 
+#### Core components of the setup
+* Window manager: **[dwm](https://github.com/keeganjk/dwm)**
     + To use the bar script, copy `dwmstatus` to a location in `$PATH` (e.g. `~/.local/bin/`) and have it run before/while starting `dwm`.
-* Terminal: [st](https://github.com/keeganjk/st) 
+* Terminal: **[st](https://github.com/keeganjk/st)**
+#### Optional
 * Music player: `ncmpcpp` + `mpd`
 * Shortcut handler: `sxhkd`
 * Screen locker: `slock`
+* `mpc`: For handling `mpd` (used by `sxhkd`, optionally used with `mpd`)
+* `xdotool`: For automating clicks via keyboard shortcuts (used by `sxhkd`)
+* `maim`: For screenshots (used by `sxhkd`)
 
-<sup>1</sup>The linked applications should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a config script unrelated to the source code itself.
+<sup>1</sup>The links in **bold** should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
 ### Dependencies
 * `mpc`: For handling `mpd` (used by `sxhkd`)
