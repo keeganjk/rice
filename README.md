@@ -1,6 +1,6 @@
 # rice
 
-### Software<sup>1</sup>
+### Dependencies<sup>1</sup>
 #### Software
 * Window manager: **[dwm](https://github.com/keeganjk/dwm)**
     + To use the bar script, copy `dwmstatus` to a location in `$PATH` (e.g. `~/.local/bin/`) as executable and have it run before/while starting `dwm` (e.g. add `dwmstatus &` to `xinitrc`).
@@ -11,13 +11,14 @@
 * Screen locker: `slock`
 * Text editor: `neovim`
 * File manager: `ranger` and sometimes `pcmanfm`
-#### Dependencies
+#### Sub-Dependencies
 * `mpc`: For handling `mpd` (used by `sxhkd`)
 * `xdotool`: For automating clicks via keyboard shortcuts (used by `sxhkd`)
 * `maim`: For screenshots (used by `sxhkd`)
+* `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
+#### Additional software
 * `ibus`: For enabling additional keyboard layouts
 * `dunst`: Notification daemon
-* `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
 
 > <sup>1</sup>The links in **bold** should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
