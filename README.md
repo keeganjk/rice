@@ -1,24 +1,25 @@
 # rice
 
 ### Dependencies<sup>1</sup>
-#### Software
-* Window manager: **[dwm](https://github.com/keeganjk/dwm)**
+#### Important
+* **[dwm](https://github.com/keeganjk/dwm)**: Window manager
     + To use the bar script, copy `dwmstatus` to a location in `$PATH` (e.g. `~/.local/bin/`) as executable and have it run before/while starting `dwm` (e.g. add `dwmstatus &` to `xinitrc`).
-* Terminal: **[st](https://github.com/keeganjk/st)**
-* Dynamic menu: `dmenu`
-* Music player: `ncmpcpp` + `mpd`
-* Shortcut handler: `sxhkd`
-* Screen locker: `slock`
-* Text editor: `neovim`
-* File manager: `ranger` and sometimes `pcmanfm`
-#### Sub-Dependencies
-* `mpc`: For handling `mpd` (used by `sxhkd`)
-* `xdotool`: For automating clicks via keyboard shortcuts (used by `sxhkd`)
-* `maim`: For screenshots (used by `sxhkd`)
-* `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
-#### Additional software
-* `ibus`: For enabling additional keyboard layouts
+* **[st](https://github.com/keeganjk/st)**: Terminal emulator
+#### Standard
+* `dmenu`: Mainly used as application launcher
 * `dunst`: Notification daemon
+* `slock`: Simple lockscreen
+#### Optional
+* `sxhkd`: Handles shortcuts, is easier to configure than manually adding them to `dwm`'s `config.h`
+* `mpc`: Controller for `mpd`, used for shortcuts with `sxhkd`
+* `xdotool`: Automates/simulates input, used for shortcuts with `sxhkd`
+* `maim`: Screenshot utility, used for shortcuts with `sxhkd`
+* `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
+#### Recommended
+* Music player: `ncmpcpp` (frontend) + `mpd` (backend)
+* Text editor: `neovim`
+* File manager: `ranger` (TUI), `pcmanfm` (GUI)
+* `ibus`: For enabling additional keyboard layouts
 
 > <sup>1</sup>The links in **bold** should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
