@@ -1,9 +1,25 @@
 # rice
 
-### Software
-* Window Manager: [dwm](https://github.com/keeganjk/dwm) 
+### Software<sup>1</sup>
+* Window manager: [dwm](https://github.com/keeganjk/dwm) 
     + To use the bar script, copy `dwmstatus` to a location in `$PATH` (e.g. `~/.local/bin/`) and have it run before/while starting `dwm`.
 * Terminal: [st](https://github.com/keeganjk/st) 
+* Music player: `ncmpcpp` + `mpd`
+* Shortcut handler: `sxhkd`
+* Screen locker: `slock`
+
+<sup>1</sup>The linked applications should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a config script unrelated to the source code itself.
+
+### Dependencies
+* `mpc`: For handling `mpd` (used by `sxhkd`)
+* `xdotool`: For automating clicks via keyboard shortcuts (used by `sxhkd`)
+* `maim`: For screenshots (used by `sxhkd`)
+
+### Fonts
+* GNU Unifont (text) [bitmap]
+* Terminus (text) [bitmap]
+        + Alternate bitmap font for screens on which Unifont is displayed improperly
+* Siji (icons) [bitmap]
 
 ### Colorscheme
 ```
