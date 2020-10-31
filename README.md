@@ -2,6 +2,7 @@
 
 ### Software
 * Window Manager: [dwm](https://github.com/keeganjk/dwm) 
+    + To use the bar script, copy `dwmstatus` to a location in `$PATH` (e.g. `~/.local/bin/`) and have it run before/while starting `dwm`.
 * Terminal: [st](https://github.com/keeganjk/st) 
 
 ### Colorscheme
