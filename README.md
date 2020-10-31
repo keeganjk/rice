@@ -19,7 +19,7 @@
 * `dunst`: Notification daemon
 * `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
 
-<sup>1</sup>The links in **bold** should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
+> <sup>1</sup>The links in **bold** should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
 ### Fonts
 * GNU Unifont (text) [bitmap]
