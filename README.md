@@ -1,10 +1,10 @@
 # rice
 
-### Dependencies<sup>1</sup>
+### Dependencies<sup>1</sup>:
 #### Important
-* **[dwm](https://github.com/keeganjk/dwm)**: Window manager
+* ***[dwm](https://github.com/keeganjk/dwm): Window manager***
     + To use the bar script, copy `dwmstatus` to a location in `$PATH` (e.g. `~/.local/bin/`) as executable and have it run before/while starting `dwm` (e.g. add `dwmstatus &` to `xinitrc`).
-* **[st](https://github.com/keeganjk/st)**: Terminal emulator
+* ***[st](https://github.com/keeganjk/st): Terminal emulator***
 #### Standard
 * `dmenu`: Mainly used as application launcher
 * `dunst`: Notification daemon
@@ -21,7 +21,7 @@
 * File manager: `ranger` (TUI), `pcmanfm` (GUI)
 * `ibus`: For enabling additional keyboard layouts
 
-> <sup>1</sup>The links in **bold** should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
+> <sup>1</sup> The items in **italicized bold** should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
 ### Fonts
 * GNU Unifont (text) [bitmap]
