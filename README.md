@@ -9,13 +9,13 @@
 * `dmenu`: Mainly used as application launcher
 * `dunst`: Notification daemon
 * `slock`: Simple lockscreen
-#### Optional
+#### Recommended
 * `sxhkd`: Handles shortcuts, is easier to configure than manually adding them to `dwm`'s `config.h`
 * `mpc`: Controller for `mpd`, used for shortcuts with `sxhkd`
 * `xdotool`: Automates/simulates input, used for shortcuts with `sxhkd`
 * `maim`: Screenshot utility, used for shortcuts with `sxhkd`
 * `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
-#### Recommended
+#### Optional
 * Music player: `ncmpcpp` (frontend) + `mpd` (backend)
 * Text editor: `neovim`
 * File manager: `ranger` (TUI), `pcmanfm` (GUI)
