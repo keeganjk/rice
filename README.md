@@ -1,21 +1,21 @@
 # rice
 
 ### Dependencies<sup>1</sup>:
-#### Important
+#### Important:
 * **[`dwm`](https://github.com/keeganjk/dwm)**: Window manager
     + To use the bar script, copy `dwmstatus` to a location in `$PATH` (e.g. `~/.local/bin/`) as executable and have it run before/while starting `dwm` (e.g. add `dwmstatus &` to `xinitrc`).
-#### Standard
+#### Standard:
 * **[`st`](https://github.com/keeganjk/st)**: Terminal emulator
 * `dmenu`: Mainly used as application launcher
 * `dunst`: Notification daemon
 * `slock`: Simple lockscreen
-#### Recommended
+#### Recommended:
 * `sxhkd`: Handles shortcuts, is easier to configure than manually adding them to `dwm`'s `config.h`
 * `mpc`: Controller for `mpd`, used for shortcuts with `sxhkd`
 * `xdotool`: Automates/simulates input, used for shortcuts with `sxhkd`
 * `maim`: Screenshot utility, used for shortcuts with `sxhkd`
 * `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
-#### Optional
+#### Optional:
 * Music player: `ncmpcpp` (frontend) + `mpd` (backend)
 * Text editor: `neovim`
 * File manager: `ranger` (TUI), `pcmanfm` (GUI)
