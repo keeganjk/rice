@@ -7,7 +7,7 @@
 #### Standard:
 * **[`st`](https://github.com/keeganjk/st)**: Terminal emulator
 * `dmenu`: Mainly used as application launcher
-* `dunst`: Notification daemon
+* `dunst` + `libnotify`: Notifications
 * `slock`: Simple lockscreen
 #### Recommended:
 * `sxhkd`: Handles shortcuts, is easier to configure than manually adding them to `dwm`'s `config.h`
@@ -38,7 +38,7 @@
 "#4E5F7C", // blue
 "#6a5974", // magenta
 "#628c85", // cyan
-"#929c9c", // light grey
+"#7a7a7a", // light grey
 
 "#52505B", // grey
 "#a1777e", // light red
