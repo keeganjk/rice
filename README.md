@@ -31,26 +31,22 @@
 
 ### Colorscheme
 ```
-"#101010", // "black"
-"#8c6269", // red
-"#73785b", // green
-"#857551", // yellow
-"#4E5F7C", // blue
-"#6a5974", // magenta
-"#628c85", // cyan
-"#7a7a7a", // light grey
-
-"#52505B", // grey
-"#a1777e", // light red
-"#859466", // light green
-"#a7945f", // light yellow
-"#667893", // light blue
-"#8b719c", // light magenta
-"#77a19a", // light cyan
-"#939394", // "white"
-
-"#667893", // cursor
-"#938166", // rev cursor
-"#09080d", // background
-"#c7c7c7", // foreground
+ *background: #09080d
+ *foreground: #c7c7c7
+ *color0:     #101010 
+ *color1:     #8c6269 
+ *color2:     #73785b
+ *color3:     #857551
+ *color4:     #4E5F7C
+ *color5:     #6a5974
+ *color6:     #628c85
+ *color7:     #7a7a7a 
+ *color8:     #52505B 
+ *color9:     #a1777e
+ *color10:    #859466
+ *color11:    #a7945f
+ *color12:    #667893
+ *color13:    #8b719c
+ *color14:    #77a19a
+ *color15:    #939394
 ```
