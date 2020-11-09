@@ -19,6 +19,7 @@
 * Music player: `ncmpcpp` (frontend) + `mpd` (backend)
 * Text editor: `neovim`
 * File manager: `ranger` (TUI), `pcmanfm` (GUI)
+* Image viewer: `sxiv`
 * `ibus`: For enabling additional keyboard layouts
 
 #### <sup>1</sup> The items in `bold` should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
