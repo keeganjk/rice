@@ -57,25 +57,28 @@
 #### Formatting
 ##### Directory structure
 ```
-Artists/
-    _Collaboration/
-    _Non-Latin/
-    0-9/
-    A/
-    B/
-    C/
-    etc.
-Soundtracks/
+Music/
+    Artists/
+        _Collaboration/
+        _Non-Latin/
+        0-9/
+        A/
+        B/
+        C/
+        etc.
+    Soundtracks/
 ```
 ###### Artists
 * If an artist name is the artist's actual name, put it in the format `Surname,GivenName`; e.g. "John Smith" would be `Smith,John`
 * If the artist name has an article (e.g. in English, "a", "an", "the"), move it to the end of the artist's name, separated by a comma; e.g. "The Band" would be `Band,The`
-* Replaces any spaces ` ` with hyphens `-`
+* Replaces any spaces ` `  with hyphens `-`
 * Put these in the `Artists/` directory under the correct subdirectory that the artist's \[file]name begins with
 * If there is a collaboration artist, create a symlink to it in the direcories of each artist involved
 * If there is an artist whose name begins with a non-Latin character, create a symlink of the translated/transliterated name in the directory of the letter that it begins with
 ###### Albums
-* Put these in the directory that 
+* Put these in the directory of the artist it is associated with in the format of `ReleaseYear~AlbumName`; e.g. for an album called "The Album" released in 1999, do `1999~The-Album`
+###### Soundtracks
+* These are put in a category separate from typical albums from artists. Put them in the `Sountracks/` directory in the format `ReleaseYear~SoundtrackName`, for example "Something OST" released in 1999 would be `1999~Something-OST`
 #### Replacements<sup>2</sup>:
 * Replace slashes, leading and trailing dots, and control characters `[<>:"\?\*\|]` with `_`
 * Remove leading and trailing whitespace
