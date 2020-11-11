@@ -65,7 +65,7 @@ Music/
         A/
         B/
         C/
-        etc.
+        ...
     Soundtracks/
 ```
 ###### Artists
