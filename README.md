@@ -1,21 +1,21 @@
 # rice
 
 ### Dependencies<sup>1</sup>:
-#### Important:
+#### Important
 * **[`dwm`](https://github.com/keeganjk/dwm)**: Window manager
     + To use the bar script, copy `dwmstatus` to a location in `$PATH` (e.g. `~/.local/bin/`) as executable and have it run before/while starting `dwm` (e.g. add `dwmstatus &` to `xinitrc`).
-#### Standard:
+#### Standard
 * **[`st`](https://github.com/keeganjk/st)**: Terminal emulator
 * `dmenu`: Mainly used as application launcher
 * `dunst` + `libnotify`: Notifications
 * `slock`: Simple lockscreen
-#### Recommended:
+#### Recommended
 * `sxhkd`: Handles shortcuts, is easier to configure than manually adding them to `dwm`'s `config.h`
 * `mpc`: Controller for `mpd`, used for shortcuts with `sxhkd`
 * `xdotool`: Automates/simulates input, used for shortcuts with `sxhkd`
 * `maim`: Screenshot utility, used for shortcuts with `sxhkd`
 * `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
-#### Optional:
+#### Optional
 * Music player: `ncmpcpp` (frontend) + `mpd` (backend)
 * Text editor: `neovim`
 * File manager: `ranger` (TUI), `pcmanfm` (GUI)
@@ -51,3 +51,36 @@
  *color14:    #77a19a
  *color15:    #939394
 ```
+
+## Naming files
+### Music files
+#### Formatting
+##### Directory structure
+```
+Artists/
+    _Collaboration/
+    _Non-Latin/
+    0-9/
+    A/
+    B/
+    C/
+    etc.
+Soundtracks/
+```
+###### Artists
+* If an artist name is the artist's actual name, put it in the format `Surname,GivenName`; e.g. "John Smith" would be `Smith,John`
+* If the artist name has an article (e.g. in English, "a", "an", "the"), move it to the end of the artist's name, separated by a comma; e.g. "The Band" would be `Band,The`
+* Replaces any spaces ` ` with hyphens `-`
+* Put these in the `Artists/` directory under the correct subdirectory that the artist's \[file]name begins with
+* If there is a collaboration artist, create a symlink to it in the direcories of each artist involved
+* If there is an artist whose name begins with a non-Latin character, create a symlink of the translated/transliterated name in the directory of the letter that it begins with
+###### Albums
+* Put these in the directory that 
+#### Replacements<sup>2</sup>:
+* Replace slashes, leading and trailing dots, and control characters `[<>:"\?\*\|]` with `_`
+* Remove leading and trailing whitespace
+* Replace `. ` with `.`
+* Replace `, ` with `,`
+* Replace all spaces with `-`
+
+#### <sup>2</sup> See the `beets` configuration's `config.yaml`
