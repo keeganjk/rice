@@ -12,6 +12,7 @@
 #### Recommended
 * `sxhkd`: Handles shortcuts, is easier to configure than manually adding them to `dwm`'s `config.h`
 * `mpc`: Controller for `mpd`, used for shortcuts with `sxhkd`
+* `mpdscribble`: \[last.fm] Scrobbler for `mpd`
 * `xdotool`: Automates/simulates input, used for shortcuts with `sxhkd`
 * `maim`: Screenshot utility, used for shortcuts with `sxhkd`
 * `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
