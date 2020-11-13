@@ -9,6 +9,8 @@
 * `dmenu`: Mainly used as application launcher
 * `dunst` + `libnotify`: Notifications
 * `slock`: Simple lockscreen
+* `zsh`: Shell
+    + Install the `zsh-autosuggestions` and `zsh-syntax-highlighting` plugins, they should be available in the OS's repositories    
 #### Recommended
 * `sxhkd`: Handles shortcuts, is easier to configure than manually adding them to `dwm`'s `config.h`
 * `mpc`: Controller for `mpd`, used for shortcuts with `sxhkd`
