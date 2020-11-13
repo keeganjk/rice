@@ -1,0 +1,47 @@
+#!/bin/sh
+
+date_and_time() {
+    DAT="$(date '+%Y.%m.%d %H:%M')"
+    echo -n "$DAT"
+}
+
+updates() {
+    UPD="$(checkupdates+aur | wc -l)"
+    echo -n "$UPD"
+}
+
+memory_percentage() {
+    MEM_TOTAL="$(head -n1 /proc/meminfo | sed 's/MemTotal:\s*//;s/\s*kB//')"
+    MEM_FREE="$(grep -i -m1 free /proc/meminfo | sed 's/MemFree:\s*//;s/\s*kB//')"
+    MEM_BUFFER="$(grep -i -m1 buffers /proc/meminfo | sed 's/Buffers:\s*//;s/\s*kB//')"
+    MEM_CACHE="$(grep -i -m1 cached /proc/meminfo | sed 's/Cached:\s*//;s/\s*kB//')"
+    MEM_USED=$(echo "$MEM_TOTAL-$MEM_FREE-$MEM_BUFFER-$MEM_CACHE" | bc)
+    MEM_PERCENTAGE=$(echo "scale=1; 100*$MEM_USED/$MEM_TOTAL" | bc)
+    MEM_PERCENTAGE=$(echo "$MEM_PERCENTAGE" | bc)
+    MEM_PERCENTAGE=$(printf "%.1f\n" $MEM_PERCENTAGE)
+    echo -n "$MEM_PERCENTAGE%"
+}
+
+cpu_percentage() {
+    set -- $(mpstat -P 0 | sed '$!d;s/\S*\s\SM//')
+    #CPU=$2
+    CPU=$(printf "%.1f\n" $2)
+    echo -n "$CPU%"
+}
+
+mpc_current() {
+    current=$(mpc current)
+    echo -n "$current"
+}
+
+local_ip() {
+    set -- $(ip a | grep inet | grep -v 127.0.0.1 | grep -v inet6)
+    LOCAL_IP=$(echo $2 | sed 's/\/\S*//')
+    echo -n "$LOCAL_IP"
+}
+
+while true; do # Generic loop
+	#xsetroot -name "[$(local_ip)][$(cpu_percentage)][$(memory_percentage)][$(updates &)][$(date_and_time)]" 
+	xsetroot -name " $(local_ip) | $(cpu_percentage) | $(memory_percentage) | $(updates &) | $(date_and_time) " 
+    sleep 30
+done &

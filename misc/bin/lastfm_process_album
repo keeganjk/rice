@@ -1,0 +1,77 @@
+#!/usr/bin/python
+import csv
+import datetime
+ 
+# Edit the csv file with a text editor like notepad++ or vscode and insert this as the first line (without the '# '):
+# artist,album,album,date
+ 
+# Put the csv in the same folder as this py file and put the filename in the next line
+your_csv_filename = input('filename: ')
+ 
+def prepare_csv(filename):
+    albums = {}
+    dates = []
+ 
+    # Read in all the data
+    with open(filename, 'r', encoding="utf-8") as _filehandler:
+        csv_file_reader = csv.DictReader(_filehandler)
+        for row in csv_file_reader:
+            # Read in the csv values for this row
+            album = row['album']
+            date_text = row['date'].rstrip()
+            try:
+                raw_datetime = datetime.datetime.strptime(date_text, "%d %b %Y %H:%M")
+                date = raw_datetime.strftime("%Y %B")
+            except ValueError:
+                date = 'No Date'
+ 
+ 
+ 
+            # Add a new album to the dict if needed
+            if album not in albums:
+                albums[album] = {}
+ 
+            # Add a new date to the albums dict with start counter one or
+            # if already present add one for this date
+            if date not in albums[album]:
+                albums[album][date] = 1
+            else:
+                albums[album][date] += 1
+ 
+            # Add this date to the list of all dates if needed
+            if date not in dates:
+                dates.insert(0, date)
+ 
+    # Accumulate the counts
+    albumsSum = {}
+    for album in albums:
+        sum = 0
+        albumsSum[album] = {'album':album}
+        for date in dates:
+            if date in albums[album]:
+                # Add overall plays for this album
+                sum += albums[album][date]
+                albumsSum[album][date] = sum
+ 
+    print(albumsSum)
+ 
+    # Write all the data
+    dates.insert(0, 'album')
+ 
+    output_filename = filename.replace(".csv", "-processed-albums.csv")
+    with open(output_filename, 'w', encoding="utf-8") as out:
+        csvOut = csv.DictWriter(out, dates)
+        csvOut.writeheader()
+        for album in albumsSum:
+            csvOut.writerow(albumsSum[album])
+ 
+    print()
+    print()
+    print()
+    print('Finished! Please open the file "%s" for the output.' % output_filename)
+ 
+ 
+ 
+if __name__ == '__main__':
+    print('Hiya! Now processing "%s"...' % your_csv_filename)
+    prepare_csv(your_csv_filename)
