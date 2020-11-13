@@ -1,0 +1,15 @@
+paths: 
+    default: _beets/Albums/%left{%upper{$albumartist}, 1}/$albumartist/$original_year~$album/$track~$title
+    singleton: _beets/Non-Album/$artist/$title
+    comp: _beets/Compilations/$original_year~$albumalbum%aunique{}/$track~$title
+    albumtype:soundtrack: _beets/Soundtracks/$original_year~$album/$track~$title
+
+replace:
+    '[\\/]': _
+    '^\.': _
+    '[\x00-\x1f]': _
+    '[<>:"\?\*\|]': _
+    '\.$': _
+    '\s+$': ''
+    '^\s+': ''
+    '\s': '-'
