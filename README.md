@@ -69,8 +69,8 @@ Music/
     Soundtracks/
 ```
 ###### Artists
-* If an artist name is the artist's actual name, put it in the format `Surname,GivenName`; e.g. "John Smith" would be `Smith,John`
-* If the artist name has an article (e.g. in English, "a", "an", "the"), move it to the end of the artist's name, separated by a comma; e.g. "The Band" would be `Band,The`
+* If an artist name is the artist's actual name, put it in the format `Surname,-GivenName`; e.g. "John Smith" would be `Smith,-John`
+* If the artist name has an article (e.g. in English, "a", "an", "the"), move it to the end of the artist's name, separated by a comma; e.g. "The Band" would be `Band,-The`
 * Replaces any spaces ` `  with hyphens `-`
 * Put these in the `Artists/` directory under the correct subdirectory that the artist's \[file]name begins with
 * If there is a collaboration artist, create a symlink to it in the direcories of each artist involved
@@ -82,8 +82,6 @@ Music/
 #### Replacements<sup>2</sup>:
 * Replace slashes, leading and trailing dots, and control characters `[<>:"\?\*\|]` with `_`
 * Remove leading and trailing whitespace
-* Replace `. ` with `.`
-* Replace `, ` with `,`
 * Replace all spaces with `-`
 
 #### <sup>2</sup> See the `beets` configuration's `config.yaml`
