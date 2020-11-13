@@ -70,6 +70,7 @@ Music/
 ```
 ###### Artists
 * If an artist name is the artist's actual name, put it in the format `Surname,-GivenName`; e.g. "John Smith" would be `Smith,-John`
++ * Note: If a band's name resembles a person's name but is not actually the name/pseudonym of the artist, do not use `Surname,-GivenName`
 * If the artist name has an article (e.g. in English, "a", "an", "the"), move it to the end of the artist's name, separated by a comma; e.g. "The Band" would be `Band,-The`
 * Replaces any spaces ` `  with hyphens `-`
 * Put these in the `Artists/` directory under the correct subdirectory that the artist's \[file]name begins with
