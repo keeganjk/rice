@@ -1,0 +1,34 @@
+# make sxhkd reload its configuration files:
+super + Escape
+  pkill -USR1 -x sxhkd && notify-send -t 1500 "sxhkdrc reloaded"
+
+# Media keys
+XF86AudioPlay
+  mpc toggle
+
+XF86AudioNext
+  mpc next
+
+XF86AudioPrev
+  mpc prev
+
+# Click
+super + n
+  xdotool keyup Super_L && xdotool click 1
+
+# Lock screen
+super + x
+  slock
+
+# Screenshots
+super + Print
+  maim -u ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png && notify-send -t 1500 'Screenshot saved in ~/Pictures/Screenshots'
+
+super + shift + Print
+  maim -u -s ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png && notify-send -t 1500 'Screenshot saved in ~/Pictures/Screenshots'
+
+super + control + Print
+  maim -u | tee ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png | xclip -selection clipboard -t image/png && notify-send -t 1500 'Screenshot saved in ~/Pictures/Screenshots and copied to clipboard'
+
+super + shift + control + Print
+  maim -u -s | tee ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png | xclip -selection clipboard -t image/png && notify-send -t 1500 'Screenshot saved in ~/Pictures/Screenshots and copied to clipboard'
