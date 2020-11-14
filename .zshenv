@@ -8,12 +8,13 @@ appendpath () {
     esac
 }
 
-appendpath "$HOME/.local/bin"
+appendpath "$HOME/misc/bin"
 export PATH
 
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_CACHE_HOME="$HOME/.cache"
-export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/conf"
+export XDG_CACHE_HOME="$HOME/misc/cache"
+export XDG_DATA_HOME="$HOME/misc/data"
+export XDG_RUNTIME_DIR="$HOME/misc/run"
 
 # Set various environmental variables
 ##########

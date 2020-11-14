@@ -19,6 +19,7 @@
 * `xdotool`: Automates/simulates input, used for shortcuts with `sxhkd`
 * `maim`: Screenshot utility, used for shortcuts with `sxhkd`
 * `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
+* `xclip`: For copying text (in the terminal emulator)
 #### Optional
 * Music player: `ncmpcpp` (frontend) + `mpd` (backend)
 * Text editor: `neovim`
@@ -33,6 +34,12 @@
 * Terminus (text) [bitmap]
         + Alternate bitmap font for screens on which Unifont is displayed improperly
 * Siji (icons) [bitmap]
+
+### Commands to run to get everything working correctly
+```
+chsh -s $(which zsh) $(whoami) # Changes default shell to zsh
+xdg-user-dirs-update # Sets default user directories
+```
 
 ### Colorscheme
 ```
