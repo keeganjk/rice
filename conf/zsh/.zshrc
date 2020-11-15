@@ -1,8 +1,6 @@
 source ~/.zshenv
 bindkey -v
 export KEYTIMEOUT=1
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
 
 cursor_mode() {
     # See https://ttssh2.osdn.jp/manual/4/en/usage/tips/vim.html for cursor shapes
@@ -33,6 +31,11 @@ cursor_mode
 
 autoload -Uz compinit; compinit
 autoload -U colors && colors
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "\e[A" history-beginning-search-backward-end
+bindkey "\e[B" history-beginning-search-forward-end
 zstyle ':completion:*' menu select
 _comp_options+=(globdots) # With hidden files
 fpath=("$ZDOTDIR/prompts" $fpath)
