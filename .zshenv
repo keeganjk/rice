@@ -55,4 +55,4 @@ alias xcp="xclip -selection clipboard"
 alias startx='startx "$XDG_CONFIG_HOME/X11/xinitrc"'
 alias :q='exit'
 alias irssi='irssi --config $XDG_CONFIG_HOME/irssi/config'
-alias grep='grep --color'
+alias grep='grep --color=auto'

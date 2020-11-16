@@ -26,6 +26,7 @@
 * File manager: `ranger` (TUI), `pcmanfm` (GUI)
 * Image viewer: `sxiv`
 * `ibus`: For enabling additional keyboard layouts
+* LaTeX: `texlive-most`, `texlive-lang`, `biber`
 
 #### <sup>1</sup> The items in `bold` should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
