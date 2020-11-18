@@ -1,6 +1,6 @@
 # make sxhkd reload its configuration files:
 super + Escape
-  pkill -USR1 -x sxhkd && notify-send -t 1500 "sxhkdrc reloaded"
+  pkill -USR1 -x sxhkd 
 
 # Media keys
 XF86AudioPlay
@@ -22,13 +22,13 @@ super + x
 
 # Screenshots
 super + Print
-  maim -u ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png && notify-send -t 1500 'Screenshot saved in ~/Pictures/Screenshots'
+  maim -u ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png 
 
 super + shift + Print
-  maim -u -s ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png && notify-send -t 1500 'Screenshot saved in ~/Pictures/Screenshots'
+  maim -u -s ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png 
 
 super + control + Print
-  maim -u | tee ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png | xclip -selection clipboard -t image/png && notify-send -t 1500 'Screenshot saved in ~/Pictures/Screenshots and copied to clipboard'
+  maim -u | tee ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png | xclip -selection clipboard -t image/png 
 
 super + shift + control + Print
-  maim -u -s | tee ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png | xclip -selection clipboard -t image/png && notify-send -t 1500 'Screenshot saved in ~/Pictures/Screenshots and copied to clipboard'
+  maim -u -s | tee ~/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M').png | xclip -selection clipboard -t image/png 
