@@ -1,10 +1,8 @@
 # rice
+Documented for Arch Linux and derivatives
 
-### Dependencies<sup>1</sup>:
-#### Important
+### Software I Use That is of Note<sup>1</sup>
 * **[`dwm`](https://github.com/keeganjk/dwm)**: Window manager
-    + To use the bar script, copy `dwmstatus` to a location in `$PATH` (e.g. `~/.local/bin/`) as executable and have it run before/while starting `dwm` (e.g. add `dwmstatus &` to `xinitrc`).
-#### Standard
 * **[`st`](https://github.com/keeganjk/st)**: Terminal emulator
 * `dmenu`: Mainly used as application launcher
 * `dunst` + `libnotify`: Notifications
@@ -12,7 +10,6 @@
 * `zsh`: Shell
     + Install the `zsh-autosuggestions` and `zsh-syntax-highlighting` plugins, they should be available in the OS's repositories
 * `xdg-user-dirs`: For managing custom directories
-#### Recommended
 * `sxhkd`: Handles shortcuts, is easier to configure than manually adding them to `dwm`'s `config.h`
 * `mpc`: Controller for `mpd`, used for shortcuts with `sxhkd`
 * `mpdscribble`: \[last.fm] Scrobbler for `mpd`
@@ -20,7 +17,6 @@
 * `maim`: Screenshot utility, used for shortcuts with `sxhkd`
 * `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
 * `xclip`: For copying text (in the terminal emulator)
-#### Optional
 * Music player: `ncmpcpp` (frontend) + `mpd` (backend)
 * Text editor: `neovim`
 * File manager: `ranger` (TUI), `pcmanfm` (GUI)
