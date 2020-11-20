@@ -23,10 +23,16 @@
  dwm.selbgcolor:      #101010
  dwm.selbordercolor:  #667893
  dwm.selfgcolor:      #667893
- dwm.borderpx:        4
+ dwm.borderpx:        3
  dwm.snap:            32
  dwm.showbar:         1
  dwm.topbar:          1
  dwm.nmaster:         1 
  dwm.resizehints:     1 
  dwm.mfact:           0.55
+ 
+ dmenu.font : ypn envypn
+ dmenu.background : #09080d
+ dmenu.foreground : #c7c7c7
+ dmenu.selbackground : #101010
+ dmenu.selforeground : #667893

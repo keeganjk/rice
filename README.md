@@ -4,7 +4,7 @@ Documented for Arch Linux and derivatives
 ### Software I Use That is of Note<sup>1</sup>
 * **[`dwm`](https://github.com/keeganjk/dwm)**: Window manager
 * **[`st`](https://github.com/keeganjk/st)**: Terminal emulator
-* `dmenu`: Mainly used as application launcher
+* **[`dmenu`](https://github.com/keeganjk/dmenu)**: Dynamic menu
 * `dunst` + `libnotify`: Notifications
 * `slock`: Simple lockscreen
 * `zsh`: Shell
