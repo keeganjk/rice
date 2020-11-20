@@ -27,7 +27,7 @@ Documented for Arch Linux and derivatives
 #### <sup>1</sup> The items in `bold` should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
 ### Fonts
-* `envypon-powerline-git` (text) [bitmap]
+* `envypn-powerline-git` (text) [bitmap]
 * GNU Unifont (text) [bitmap]
     + Has CJK characters
 * Siji (icons) [bitmap]
