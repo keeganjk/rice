@@ -18,7 +18,7 @@ Documented for Arch Linux and derivatives
 * `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
 * `xclip`: For copying text (in the terminal emulator)
 * Music player: `ncmpcpp` (frontend) + `mpd` (backend)
-* Text editor: `neovim`
+* Text editor: `neovim`, **[`vim-plug`](https://github.com/junegunn/vim-plug)** (plugin manager for `vim`/`neovim`)
 * File manager: `ranger` (TUI), `pcmanfm` (GUI)
 * Image viewer: `sxiv`
 * `ibus`: For enabling additional keyboard layouts
