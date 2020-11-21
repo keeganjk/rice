@@ -12,17 +12,20 @@ Documented for Arch Linux and derivatives
 * `xdg-user-dirs`: For managing custom directories
 * `sxhkd`: Handles shortcuts, is easier to configure than manually adding them to `dwm`'s `config.h`
 * `mpc`: Controller for `mpd`, used for shortcuts with `sxhkd`
-* `mpdscribble`: \[last.fm] Scrobbler for `mpd`
-* `xdotool`: Automates/simulates input, used for shortcuts with `sxhkd`
+* `mpdscribble` [AUR]: \[last.fm] Scrobbler for `mpd`
+* `xdotool` [AUR]: Automates/simulates input, used for shortcuts with `sxhkd`
 * `maim`: Screenshot utility, used for shortcuts with `sxhkd`
-* `xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
+* `xorg-xsetroot`: For `dwm`'s statusbar (used by `dwmstatus` (see [dwm](https://github.com/keeganjk/dwm))
 * `xclip`: For copying text (in the terminal emulator)
 * Music player: `ncmpcpp` (frontend) + `mpd` (backend)
 * Text editor: `neovim`, **[`vim-plug`](https://github.com/junegunn/vim-plug)** (plugin manager for `vim`/`neovim`)
 * File manager: `ranger` (TUI), `pcmanfm` (GUI)
 * Image viewer: `sxiv`
 * `ibus`: For enabling additional keyboard layouts
+    + `ibus-mozc` [AUR] for Japanese input
 * LaTeX: `texlive-most`, `texlive-lang`, `biber`
+* `xorg-server`: Xorg
+* `xf86-video-intel` + `mesa` for Intel or `xf86-video-amdgpu` + `mesa` for AMD
 
 #### <sup>1</sup> The items in `bold` should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
