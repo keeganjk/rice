@@ -19,7 +19,7 @@ Documented for Arch Linux and derivatives
 * `xclip`: For copying text (in the terminal emulator)
 * Music player: `ncmpcpp` (frontend) + `mpd` (backend)
 * Text editor: `neovim`, **[`vim-plug`](https://github.com/junegunn/vim-plug)** (plugin manager for `vim`/`neovim`)
-* File manager: `ranger` (TUI), `pcmanfm` (GUI)
+* File manager: ~~`ranger`~~ trying `nnn` (TUI), `pcmanfm` (GUI)
 * Image viewer: `sxiv`
 * `ibus`: For enabling additional keyboard layouts
     + `ibus-mozc` [AUR] for Japanese input
