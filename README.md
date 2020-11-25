@@ -30,6 +30,7 @@ Documented for Arch Linux and derivatives
 * `iwd`: Network utility
 * `yay` [AUR]: Package manager
 * `man-db`, `man-pages`, `texinfo`: For viewing `man` pages
+* `checkupdates+aur` [AUR]: For checking updates
 
 #### <sup>1</sup> The items in `bold` should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
