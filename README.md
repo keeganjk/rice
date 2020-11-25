@@ -3,7 +3,7 @@ Documented for Arch Linux and derivatives
 
 ### Software I Use That is of Note<sup>1</sup>
 * **[`dwm`](https://github.com/keeganjk/dwm)**: Window manager
-* **[`st`](https://github.com/keeganjk/st)**: Terminal emulator
+* **[`st-luke`](https://github.com/keeganjk/st-luke)**: Terminal emulator, based on [Luke Smith](https://github.com/LukeSmithXyz)'s build
 * **[`dmenu`](https://github.com/keeganjk/dmenu)**: Dynamic menu
 * `dunst` + `libnotify`: Notifications
 * `slock`: Simple lockscreen
