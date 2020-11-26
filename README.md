@@ -32,6 +32,8 @@ Documented for Arch Linux and derivatives
 * `man-db`, `man-pages`, `texinfo`: For viewing `man` pages
 * `checkupdates+aur` [AUR]: For checking updates
 * `sysstat`: For checking CPU info (used by `dwmstatus`)
+* `git`
+* `reflector`: For updating mirrors
 
 #### <sup>1</sup> The items in `bold` should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
