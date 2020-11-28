@@ -24,7 +24,7 @@ Documented for Arch Linux and derivatives
 * `ibus`: For enabling additional keyboard layouts
     + `ibus-mozc` [AUR] for Japanese input
 * LaTeX: `texlive-most`, `texlive-lang`, `biber`
-* `xorg-server`: Xorg
+* `xorg-server`, `xorg-xinit`: Xorg
 * `xf86-video-intel` + `mesa` for Intel or `xf86-video-amdgpu` + `mesa` for AMD
 * `zathura` + `zathura-djvu` + `zathura-pdf-mupdf`: Document viewer
 * `iwd`: Network utility
@@ -39,7 +39,7 @@ Documented for Arch Linux and derivatives
 
 ### Fonts
 * `envypn-powerline-git` (text) [bitmap]
-* GNU Unifont (text) [bitmap]
+* `bdf-unifont` GNU Unifont (text) [bitmap]
     + Has CJK characters
 * Siji (icons) [bitmap]
 
