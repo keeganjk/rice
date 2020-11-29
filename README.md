@@ -27,7 +27,7 @@ Documented for Arch Linux and derivatives
 * `xorg-server`, `xorg-xinit`: Xorg
 * `xf86-video-intel` + `mesa` for Intel or `xf86-video-amdgpu` + `mesa` for AMD
 * `zathura` + `zathura-djvu` + `zathura-pdf-mupdf`: Document viewer
-* `iwd`: Network utility
+* `iwd` + `systemd-resolve`: Network utility
 * `yay` [AUR]: Package manager
 * `man-db`, `man-pages`, `texinfo`: For viewing `man` pages
 * `checkupdates+aur` [AUR]: For checking updates
