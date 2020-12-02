@@ -1,9 +1,9 @@
 html, body {
-  font-size:12px !important;
+  font-size:13px !important;
 }
 /* Page load background colour */
 .browserContainer {
-  background:#orange !important;
+  background:#000000 !important;
 }
  
 /* Tabs
@@ -11,36 +11,35 @@ html, body {
 #TabsToolbar {
   display:none;
 }
-
+ 
 /* Navigation
  * ***********/
 #navigator-toolbox {
-  border-bottom:none !important;
+  border-bottom:1px solid #191919 !important;
   z-index:999 !important;
 }
-
-/*#forward-button, #back-button {
+#forward-button, #back-button {
   display:none !important;
-}*/
+}
 #nav-bar {
-  color:#c7c7c7 !important;
-  background:#09080D !important;
+  color:#ffffff !important;
+  background:#000000 !important;
 }
 #urlbar-container, #search-container {
   margin-inline:0 !important;
-  background:#09080D !important;
-  border-right:none !important;
+  background:#000000 !important;
+  border-right:1px solid #191919 !important;
 }
 #urlbar-background {
-  background-color:#09080D !important;
+  background-color:#000000 !important;
   box-shadow:none !important;
   border:none !important;
 }
 #urlbar-input-container {
-  color:#c7c7c7 !important;
+  color:#ffffff !important;
 }
 .urlbarView {
-  color:#c7c7c7 !important;
+  color:#ffffff !important;
 }
 .urlbarView-url {
   color:#1f75fe !important;
@@ -51,10 +50,10 @@ html, body {
 }
 :root:not([uidensity="compact"]):not([chromehidden~="toolbar"]) #PanelUI-button {
   border-image:none !important;
-  border-left:none !important;
+  border-left:1px solid #191919 !important;
 }
 #reader-mode-button[readeractive], #pageAction-panel-bookmark[starred], #star-button[starred] {
-  fill:#none !important;
+  fill:#ffffff !important;
 }
 #pageActionSeparator {
   display:none !important;
@@ -66,14 +65,14 @@ html, body {
   border:none !important;
 }
 #urlbar[breakout][breakout-extend] {
-  border-bottom:none !important;
-  border-right:none !important;
+  border-bottom:1px solid #191919 !important;
+  border-right:1px solid #191919 !important;
 }
 .urlbarView-body-inner {
   border-top:none !important;
 }
 .urlbarView-body-outer {
-  border-bottom:none !important;
+  border-bottom:1px solid #191919 !important;
 }
 .urlbarView-row {
   padding-block:0 !important;
@@ -83,9 +82,8 @@ html, body {
 }
 .urlbarView-body-outer:hover > .urlbarView-row-inner, .urlbarView-row-inner:hover {
   border-radius:0 !important;
-  background:#101010 !important;
+  background:#191919 !important;
 }
-
 /* Sidebar
 ---------- */
 #sidebar-box {
@@ -100,23 +98,23 @@ html, body {
   bottom:0;
   left:0;
   transition:all ease 166ms;
-  background:#09080D !important;
-  border-right:none;
+  background:#000000 !important;
+  border-right:1px solid #191919;
 }
 #sidebar-box:hover {
-  width:291.24px;
-  min-width:291.24px;
-  max-width:291.24px;
+  width:260px;
+  min-width:260px;
+  max-width:260px;
 }
 #sidebar-box * {
-  background:#09080D !important;
+  background:#000000 !important;
 }
 #sidebar {
   width:auto !important;
   min-width:auto !important;
   max-width:auto !important;
   flex:auto;
-  background:#09080D !important;
+  background:#000000 !important;
 }
 #sidebar-splitter {
   display:none;
@@ -142,60 +140,59 @@ html, body {
 #main-window[titlepreface^="[1] "] #browser {
   margin-left:0;
 }
-
 /* Context Menus
 ---------------- */
 /*  */
 popupset > * {
-  background:#09080D !important;
+  background:000000 !important;
   font-weight:500 !important;
 }
 popupset {
-  border-color:#667893 !important;
+  border-color:#191919 !important;
   box-shadow:none !important;
-  background:#09080D !important;
+  background:#000000 !important;
   font-weight:500 !important;
 }
 popupset * {
-  border-color:#667893 !important;
+  border-color:#191919 !important;
   box-shadow:none !important;
   font-weight:500 !important;
 }
 panelview {
-  background:#orange !important;
-  border-color:#magenta !important;
+  background:#000000 !important;
+  border-color:#191919 !important;
 }
 panelview * {
-  color:#939394 !important;
+  color:#ffffff !important;
 }
 .panel-arrowcontent {
   box-shadow:0 0 3px 0 rgba(0,0,0,0.309) !important;
-  border:1px solid #667893 !important;
-  background:#09080d !important;
+  border:1px solid #191919 !important;
+  background:#ffffff !important;
 }
 :-moz-any(panel, menupopup)::part(arrow) {
-  fill:#008000 !important;
+  fill:#ffffff !important;
 }
 menupopup {
   -moz-appearance: none !important;
-  background-color: #09080D !important;
-  border: 1px #667893 solid !important;
+  background-color: #000000 !important;
+  border: 1px #191919 solid !important;
 }
 menupopup * {
-  color:#c7c7c7 !important;
-  fill:#c7c7c7 !important;
+  color:#ffffff !important;
+  fill:#ffffff !important;
 }
 menuseparator {
   -moz-appearance: none !important;
-  border-bottom:1px solid #667893 !important;
+  border-bottom:1px solid #191919 !important;
 }
 menuitem, menu {
   -moz-appearance: none !important;
-  color:#c7c7c7 !important;
+  color:#ffffff !important;
   padding: 7.5px 0px 7.5px 0px !important;
 }
 menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
-  color:#c7c7c7 !important;
+  color:#ffffff !important;
 }
 menuitem:hover, menu:hover, menu[open="true"], menuitem[_moz-menuactive="true"]	 {
   -moz-appearance: none !important;
@@ -204,10 +201,10 @@ menuitem:hover, menu:hover, menu[open="true"], menuitem[_moz-menuactive="true"]	
 }
 menugroup {
   padding: 0px !important;
-  background-color: #09080D !important;
+  background-color: #fffff1 !important;
 }
 menuitem > .menu-text, menuitem > .menu-iconic-text {
-  color:#c7c7c7 !important;
+  color:#ffffff !important;
 }
 menuitem[type="checkbox"] {
   padding-left: 8px !important;
@@ -224,7 +221,7 @@ menuitem[type="checkbox"] > .menu-iconic-text, menuitem[type="radio"] > .menu-ic
 }
 menuitem[checked="true"][type="checkbox"] > .menu-iconic-left {
   padding: 7px 0px 0px 0px !important;
-  border: solid blue;
+  border: solid white;
   border-width: 0 0 2px 2px;
   transform: rotate(-45deg) scale(.75);
   margin-bottom: 4px !important;
@@ -238,8 +235,8 @@ menuitem[checked="true"][type="radio"] > .menu-iconic-left {
   transform: scale(.5);
 }
 menucaption {
-  background-color: #blue !important;
-  color:#939394 !important;
+  background-color: #fffff1 !important;
+  color:#ffffff !important;
 }
 #ContentSelectDropdown > menupopup {
   background-image: none !important;
@@ -250,17 +247,17 @@ menucaption {
 menulist {
   -moz-appearance: none !important;
   padding: 4px 4px 4px 4px !important;
-  border: 2px solid #magenta !important;
-  background-color: #blue !important;
+  border: 2px solid #191919 !important;
+  background-color: #fffff1 !important;
 }
 menulist:hover {
   padding: 4px 4px 4px 4px !important;
-  border: 2px solid #magenta !important;
-  background-color: #blue !important;
+  border: 2px solid #191919 !important;
+  background-color: #fffff1 !important;
 }
 menulist[open="true"]  {
-  border: 2px solid #yellow !important;
-  background-color: #orange !important;
+  border: 2px solid #666666 !important;
+  background-color: #000000 !important;
 }
 #context-back > .menu-iconic-left, #context-forward > .menu-iconic-left, #context-reload > .menu-iconic-left, #context-stop > .menu-iconic-left, #context-bookmarkpage > .menu-iconic-left {
   padding: 0px !important;
@@ -273,28 +270,28 @@ menulist[open="true"]  {
   -moz-appearance: none !important;
   padding: 7.5px !important;
   margin-right: 6px !important;
-  color:#c7c7c7 !important;
-  border:1px solid #c7c7c7;
+  color:#ffffff !important;
+  border:1px solid #ffffff;
   border-width: 0 2px 2px 0px;
   transform: rotate(-45deg) scale(.55);
 }
 tooltip {
   -moz-appearance: none !important;
-  color:#c7c7c7 !important;
-  background-color: #orange !important;
-  border: 1px solid #magenta !important;
+  color:#ffffff !important;
+  background-color: #000000 !important;
+  border: 1px solid #191919 !important;
   padding: 6.5px !important;
 }
 #context-navigation {
-  background:#09080d !important;
+  background:#000000 !important;
 }
 #context-navigation * {
-  fill:#c7c7c7 !important;
+  fill:#F5D3A9 !important;
 }
 #context-navigation *:hover {
-  background:#09080d !important;
+  background:#000000 !important;
 }
 .popup-notification-body-container {
-  color:#c7c7c7 !important;
-  background:#09080d !important;
+  color:#ffffff !important;
+  background:#000000 !important;
 }
