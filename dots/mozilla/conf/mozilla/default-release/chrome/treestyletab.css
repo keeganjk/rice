@@ -14,7 +14,7 @@
 */
 
     #tabbar {
-      background:#010101;
+      background:#09080D;
       scrollbar-width:none;
     }
     .newtab-button-box {
@@ -25,10 +25,10 @@
       width:auto;
       padding:5px 7px 5px 6px;
       margin-left:0 !important;
-      border-top:1px solid #010101;
+      border-top:1px solid #09080D;
       border-left:none ;
-      border-bottom:1px solid #010101;
-      background:#010101;
+      border-bottom:1px solid #09080D;
+      background:#09080D;
       font-weight:500;
     }
     #tabbar:hover tab-item[data-level][data-level="0"] {
@@ -36,33 +36,33 @@
     }
     #tabbar:hover tab-item[data-level][data-level="1"] {
       margin-left:4% !important;
-      border-left:1px solid #010101;
+      border-left:1px solid #09080D;
     }
     #tabbar:hover tab-item[data-level][data-level="2"] {
       margin-left:8% !important;
-      border-left:1px solid #010101;
+      border-left:1px solid #09080D;
     }
     #tabbar:hover tab-item[data-level][data-level="3"] {
       margin-left:12% !important;
-      border-left:1px solid #010101;
+      border-left:1px solid #09080D;
     }
     #tabbar:hover tab-item[data-level][data-level="4"] {
       margin-left:16% !important;
-      border-left:1px solid #010101;
+      border-left:1px solid #09080D;
     }
     #tabbar:hover tab-item[data-level][data-level="5"] {
       margin-left:20% !important;
-      border-left:1px solid #010101;
+      border-left:1px solid #09080D;
     }
     #tabbar:hover tab-item[data-level][data-level="6"] {
       margin-left: 24% !important;
-      border-left:1px solid #010101;
+      border-left:1px solid #09080D;
     }
     tab-item.active {
-      background:#7a7a7a;
+      background:#1a1a1a;
     }
     tab-item:not(.active):hover {
-      background:#7a7a7a;
+      background:#1a1a1a;
     }
     tab-item tab-label {
       padding-left:0.309rem !important;
@@ -111,10 +111,10 @@
       padding-left:10px;
       color:#c7c7c7;
       text-shadow:
-        -1px -1px 0 #010101,
-         1px -1px 0 #010101,
-        -1px  1px 0 #010101,
-         1px  1px 0 #010101;
+        -1px -1px 0 #09080D,
+         1px -1px 0 #09080D,
+        -1px  1px 0 #09080D,
+         1px  1px 0 #09080D;
          z-index:999;
     }
     tab-item .counter::before, tab-item .counter::after {

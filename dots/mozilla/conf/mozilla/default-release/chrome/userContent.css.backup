@@ -1,8 +1,0 @@
-html {
-  scrollbar-width:none !important;
-}
-@-moz-document url-prefix(about:blank) {
-  html {
-    background:#101317 !important;
-  }
-}
