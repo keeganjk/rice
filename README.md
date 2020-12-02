@@ -34,6 +34,7 @@ Documented for Arch Linux and derivatives
 * `sysstat`: For checking CPU info (used by `dwmstatus`)
 * `git`
 * `reflector`: For updating mirrors
+* `udisks2`: For mounting things without root using `udisksctl`
 
 #### <sup>1</sup> The items in `bold` should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
