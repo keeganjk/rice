@@ -38,6 +38,8 @@ Documented for Arch Linux and derivatives
 * `pip`: Python package manager
 * `beets`: Music tagger/importer
     + Install with `pip install https://github.com/beetbox/beets/tarball/master`, otherwise it tends to have errors related to Python version
+* `ueberzug`: For previewing images, etc. in terminal
+    + Install with `sudo pip3 install ueberzug` for same reasons as `beets`
 
 #### <sup>1</sup> The items in `bold` should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
