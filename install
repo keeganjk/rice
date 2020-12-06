@@ -12,7 +12,7 @@ makepkg -si
 echo "[*] Updating with yay"
 yay
 echo "[*] Installing other packages"
-yay -S make gcc dunst libnotify slock zsh zsh-autosuggestions zsh-syntax-highlighting xdg-user-dirs sxhkd mpc mpdscribble xdotool maim xorg-xsetroot xclip ncmpcpp mpd neovim ranger pcmanfm sxiv ibus ibus-mozc texliver-most texlive-lang biber xorg-server xorg-xinit xf86-video-intel mesa xf86-video-amdgpu zathura zathura-djvu zathura-pdf-mupdf iwd man-db man-pages texinfo checkupdates+aur sysstat reflector udisks2 mpv python-pip
+yay -S make gcc dunst libnotify slock zsh zsh-autosuggestions zsh-syntax-highlighting xdg-user-dirs sxhkd mpc mpdscribble xdotool maim xorg-xsetroot xclip ncmpcpp mpd neovim ranger pcmanfm sxiv ibus ibus-mozc texliver-most texlive-lang biber xorg-server xorg-xinit xf86-video-intel mesa xf86-video-amdgpu zathura zathura-djvu zathura-pdf-mupdf iwd man-db man-pages texinfo checkupdates+aur sysstat reflector udisks2 mpv python-pip envypn-powerline-git bdf-unifont siji-git stow
 echo "[*] Enabling systemd services"
 sudo systemctl enable --now iwd.service
 sudo systemctl enable --now systemd-resolved.service
@@ -20,3 +20,21 @@ echo "[*] Installing Python software with pip"
 pip install https://github.com/beetbox/beets/tarball/master
 sudo pip3 install ueberzug
 pip install ranger-fm
+echo "[*] Making ~/doc/git/"
+mkdir -p ~/doc/git
+cd ~/doc/git
+echo "[*] Cloning and installing Suckless software"
+git clone https://github.com/keeganjk/dwm
+git clone https://github.com/keeganjk/st-luke
+git clone https://github.com/keeganjk/dmenu
+cd dwm; sudo make clean install && cd ..
+cd st-luke; sudo make clean install && cd ..
+cd dmenu; sudo make clean install && cd ..
+echo "[*] Cloning and installing dotfiles with stow"
+git clone https://github.com/keeganjk/rice
+cp -r dots ~/.dots
+cd ~
+stow -t ~ .dots/*
+echo "[*] Changing shell to zsh, setting default user directories"
+chsh -s $(which zsh) $(whoami) # Changes default shell to zsh
+xdg-user-dirs-update # Sets default user directories
