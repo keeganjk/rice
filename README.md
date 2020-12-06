@@ -19,7 +19,9 @@ Documented for Arch Linux and derivatives
 * `xclip`: For copying text (in the terminal emulator)
 * Music player: `ncmpcpp` (frontend) + `mpd` (backend)
 * Text editor: `neovim`, **[`vim-plug`](https://github.com/junegunn/vim-plug)** (plugin manager for `vim`/`neovim`)
-* File manager: ~~`ranger`~~ trying `nnn` (TUI), `pcmanfm` (GUI)
+* File manager: `ranger` (TUI), `pcmanfm` (GUI)
+    + `pip install ranger-fm`
+* `ueberzug`: For previewing images in terminal (`ranger`)
 * Image viewer: `sxiv`
 * `ibus`: For enabling additional keyboard layouts
     + `ibus-mozc` [AUR] for Japanese input
@@ -27,7 +29,7 @@ Documented for Arch Linux and derivatives
 * `xorg-server`, `xorg-xinit`: Xorg
 * `xf86-video-intel` + `mesa` for Intel or `xf86-video-amdgpu` + `mesa` for AMD
 * `zathura` + `zathura-djvu` + `zathura-pdf-mupdf`: Document viewer
-* `iwd` + `systemd-resolve`: Network utility
+* `iwd` + `systemd-resolved`: Network utility
 * `yay` [AUR]: Package manager
 * `man-db`, `man-pages`, `texinfo`: For viewing `man` pages
 * `checkupdates+aur` [AUR]: For checking updates
@@ -35,6 +37,9 @@ Documented for Arch Linux and derivatives
 * `git`
 * `reflector`: For updating mirrors
 * `udisks2`: For mounting things without root using `udisksctl`
+* `make`, `gcc`: For compiling things
+* `mpv`: Video player
+* `python-pip`: For installing Python packages
 
 #### <sup>1</sup> The items in `bold` should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 

@@ -1,0 +1,22 @@
+#!/bin/sh
+echo "[*] Updating system"
+sudo pacman -Syu
+echo "[*] Installing git"
+sudo pacman -S git
+echo "[*] Installing yay"
+cd /opt
+sudo git clone https://aur.archlinux.org/yay-git.git
+sudo chown -R $(whoami):$(whoami) ./yay-git
+cd yay-git
+makepkg -si
+echo "[*] Updating with yay"
+yay
+echo "[*] Installing other packages"
+yay -S make gcc dunst libnotify slock zsh zsh-autosuggestions zsh-syntax-highlighting xdg-user-dirs sxhkd mpc mpdscribble xdotool maim xorg-xsetroot xclip ncmpcpp mpd neovim ranger pcmanfm sxiv ibus ibus-mozc texliver-most texlive-lang biber xorg-server xorg-xinit xf86-video-intel mesa xf86-video-amdgpu zathura zathura-djvu zathura-pdf-mupdf iwd man-db man-pages texinfo checkupdates+aur sysstat reflector udisks2 mpv python-pip
+echo "[*] Enabling systemd services"
+sudo systemctl enable --now iwd.service
+sudo systemctl enable --now systemd-resolved.service
+echo "[*] Installing Python software with pip"
+pip install https://github.com/beetbox/beets/tarball/master
+sudo pip3 install ueberzug
+pip install ranger-fm
