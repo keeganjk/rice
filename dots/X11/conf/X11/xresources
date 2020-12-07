@@ -31,7 +31,7 @@
  dwm.resizehints:     1 
  dwm.mfact:           0.55
  
- dmenu.font : ypn envypn
+ dmenu.font : xos4 Terminus:pixelsize=14
  dmenu.background : #09080d
  dmenu.foreground : #c7c7c7
  dmenu.selbackground : #101010
