@@ -49,10 +49,10 @@ Documented for Arch Linux and derivatives
 #### <sup>1</sup> The items in `bold` should be downloaded and compiled as source in order to get the customized versions. The others use the default versions and/or a configuration file unrelated to the source code itself.
 
 ### Fonts
-* `envypn-powerline-git` (text) [bitmap]
-* `bdf-unifont` GNU Unifont (text) [bitmap]
+* `terminus-font` (text) [bitmap]
+* `ttf-kochi-substitute` (text) [bitmap]
     + Has CJK characters
-* Siji (icons) [bitmap]
+* `siji-font` (icons) [bitmap]
 
 ### Commands to run to get everything working correctly
 ```
