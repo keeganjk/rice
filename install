@@ -26,7 +26,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 echo "[*] Installing zsh prompt"
 mkdir -p ~/conf/zsh/prompts
 cd ~/conf/zsh/prompts
-wget https://raw.githubusercontent.com/keeganjk/purification/master/prompt_purification_setup
+curl --output prompt_purification_setup https://raw.githubusercontent.com/keeganjk/purification/master/prompt_purification_setup
 echo "[*] Making directories"
 mkdir -p ~/doc/git
 mkdir -p ~/pic/scsx
@@ -37,7 +37,7 @@ echo "[*] Cloning and installing Suckless software"
 git clone https://github.com/keeganjk/dwm
 git clone https://github.com/keeganjk/st-luke
 git clone https://github.com/keeganjk/dmenu
-cd dwm; sudo make clean install && ln -s $(dirname $(readlink -f dwmstatus))/dwmstatus && cd ..
+cd dwm; sudo make clean install && ln -s $(dirname $(readlink -f dwmstatus))/dwmstatus && sudo chmod +x dwmstatus && cd ..
 cd st-luke; sudo make clean install && cd ..
 cd dmenu; sudo make clean install && cd ..
 echo "[*] Cloning and installing dotfiles with symlink"
