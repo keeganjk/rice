@@ -56,8 +56,7 @@ Documented for Arch Linux and derivatives
 
 ### Commands to run to get everything working correctly
 ```
-chsh -s $(which zsh) $(whoami) # Changes default shell to zsh
-xdg-user-dirs-update # Sets default user directories
+sh -c "$(curl -fsSl https://raw.githubusercontent.com/keeganjk/rice/main/install)"
 ```
 
 ### Colorscheme
