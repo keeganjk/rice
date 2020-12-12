@@ -30,11 +30,10 @@ git clone https://github.com/keeganjk/dmenu
 cd dwm; sudo make clean install && cd ..
 cd st-luke; sudo make clean install && cd ..
 cd dmenu; sudo make clean install && cd ..
-echo "[*] Cloning and installing dotfiles with stow"
-git clone https://github.com/keeganjk/rice
-cp -r dots ~/.dots
+echo "[*] Cloning and installing dotfiles with symlink"
+git clone https://github.com/keeganjk/dotfiles
+ln -s dotfiles/home ~
 cd ~
-stow -t ~ .dots/*
 echo "[*] Changing shell to zsh, setting default user directories"
 chsh -s $(which zsh) $(whoami) # Changes default shell to zsh
 xdg-user-dirs-update # Sets default user directories
