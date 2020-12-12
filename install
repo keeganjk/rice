@@ -12,7 +12,7 @@ makepkg -si
 echo "[*] Updating with yay"
 yay
 echo "[*] Installing other packages"
-yay -S make gcc dunst libnotify slock zsh zsh-autosuggestions zsh-syntax-highlighting xdg-user-dirs sxhkd mpc mpdscribble xdotool maim xorg-xsetroot xclip ncmpcpp mpd neovim ranger pcmanfm sxiv ibus ibus-mozc texliver-most texlive-lang biber xorg-server xorg-xinit xf86-video-intel mesa xf86-video-amdgpu zathura zathura-djvu zathura-pdf-mupdf iwd man-db man-pages texinfo checkupdates+aur sysstat reflector udisks2 mpv python-pip terminus-font ttf-kochi-substitute siji-git stow
+yay -S wget make gcc dunst libnotify slock zsh zsh-autosuggestions zsh-syntax-highlighting xdg-user-dirs sxhkd mpc mpdscribble xdotool maim xorg-xsetroot xclip ncmpcpp mpd neovim ranger pcmanfm sxiv ibus ibus-mozc texliver-most texlive-lang biber xorg-server xorg-xinit xf86-video-intel mesa xf86-video-amdgpu zathura zathura-djvu zathura-pdf-mupdf iwd man-db man-pages texinfo checkupdates+aur sysstat reflector udisks2 mpv python-pip terminus-font ttf-kochi-substitute siji-git stow
 echo "[*] Enabling systemd services"
 sudo systemctl enable --now iwd.service
 sudo systemctl enable --now systemd-resolved.service
@@ -23,6 +23,10 @@ pip install ranger-fm
 echo "[*] Installing vim-plug"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+echo "[*] Installing zsh prompt"
+mkdir -p ~/conf/zsh/prompts
+cd ~/conf/zsh/prompts
+wget https://raw.githubusercontent.com/keeganjk/purification/master/prompt_purification_setup
 echo "[*] Making ~/doc/git/"
 mkdir -p ~/doc/git
 cd ~/doc/git
@@ -41,4 +45,5 @@ ln -s ~/doc/git/dotfiles/home/.zshenv ~/.zshenv
 cd ~
 echo "[*] Changing shell to zsh, setting default user directories"
 chsh -s $(which zsh) $(whoami) # Changes default shell to zsh
+echo "[*] Now open zsh in order to acknowledge ~/.zshenv" 
 #xdg-user-dirs-update # Sets default user directories
