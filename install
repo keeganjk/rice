@@ -32,8 +32,10 @@ cd st-luke; sudo make clean install && cd ..
 cd dmenu; sudo make clean install && cd ..
 echo "[*] Cloning and installing dotfiles with symlink"
 git clone https://github.com/keeganjk/dotfiles
-ln -s dotfiles/home ~
+ln -s ~/doc/git/dotfiles/home/conf ~/conf
+ln -s ~/doc/git/dotfiles/home/.config ~/.config
+ln -s ~/doc/git/dotfiles/home/.zshenv ~/.zshenv
 cd ~
 echo "[*] Changing shell to zsh, setting default user directories"
 chsh -s $(which zsh) $(whoami) # Changes default shell to zsh
-xdg-user-dirs-update # Sets default user directories
+#xdg-user-dirs-update # Sets default user directories
