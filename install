@@ -42,6 +42,8 @@ git clone https://github.com/keeganjk/dotfiles
 ln -s ~/doc/git/dotfiles/home/conf ~/conf
 ln -s ~/doc/git/dotfiles/home/.config ~/.config
 ln -s ~/doc/git/dotfiles/home/.zshenv ~/.zshenv
+echo "[*] Creating Xauthority file"
+touch ~/misc/run/Xauthority
 cd ~
 echo "[*] Changing shell to zsh, setting default user directories"
 chsh -s $(which zsh) $(whoami) # Changes default shell to zsh
