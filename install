@@ -18,7 +18,7 @@ sudo systemctl enable --now iwd.service
 sudo systemctl enable --now systemd-resolved.service
 echo "[*] Installing Python software with pip"
 pip install https://github.com/beetbox/beets/tarball/master
-sudo pip3 install ueberzug
+pip3 install ueberzug
 pip install ranger-fm
 echo "[*] Installing vim-plug"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
