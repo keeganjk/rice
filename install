@@ -51,6 +51,7 @@ echo "[*] Handling user binaries"
 cd ~/misc/bin
 curl 'https://gist.githubusercontent.com/keeganjk/44fc229d9c47eeb7869f964d7400a24d/raw/a74628b30853d45367b7f36e927c1c2019499cf8/checkupdates' > checkupdates
 chmod +x checkupdates
+sudo cp checkupdates /usr/bin/
 mv ~/.local/bin/* .
 echo "[*] Changing shell to zsh, setting default user directories"
 chsh -s $(which zsh) $(whoami) # Changes default shell to zsh
