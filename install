@@ -47,7 +47,11 @@ ln -s ~/doc/git/dotfiles/home/.config ~/.config
 ln -s ~/doc/git/dotfiles/home/.zshenv ~/.zshenv
 echo "[*] Creating Xauthority file"
 touch ~/misc/run/Xauthority
-cd ~
+echo "[*] Handling user binaries"
+cd ~/misc/bin
+curl 'https://gist.githubusercontent.com/keeganjk/44fc229d9c47eeb7869f964d7400a24d/raw/a74628b30853d45367b7f36e927c1c2019499cf8/checkupdates' > checkupdates
+chmod +x checkupdates
+mv ~/.local/bin/* .
 echo "[*] Changing shell to zsh, setting default user directories"
 chsh -s $(which zsh) $(whoami) # Changes default shell to zsh
 echo "[*] Now open zsh in order to acknowledge ~/.zshenv" 
