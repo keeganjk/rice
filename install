@@ -55,12 +55,18 @@ cd ~/conf/zsh/prompts
 curl --output prompt_purification_setup https://raw.githubusercontent.com/keeganjk/purification/master/prompt_purification_setup
 echo "[*] Creating Xauthority file"
 touch ~/misc/run/Xauthority
-echo "[*] Handling user binaries"
+echo "[*] Handling user binaries, cleaning up mess"
 cd ~/misc/bin
 curl 'https://gist.githubusercontent.com/keeganjk/44fc229d9c47eeb7869f964d7400a24d/raw/a74628b30853d45367b7f36e927c1c2019499cf8/checkupdates' > checkupdates
 chmod +x checkupdates
 sudo cp checkupdates /usr/bin/
 mv ~/.local/bin/* .
+mkdir -p ~/misc/data
+mkdir -p ~/misc/cache
+mv ~/.local/share/* ~/misc/data
+mv ~/.cache/* ~/misc/cache/*
+rm -rf ~/.local
+rm -rf ~/.cache
 echo "[*] Changing shell to zsh, setting default user directories"
 chsh -s $(which zsh) $(whoami) # Changes default shell to zsh
 echo "[*] Now open zsh in order to acknowledge ~/.zshenv" 
