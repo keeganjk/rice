@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "[*] Setting up dirs and making symlinks"
-mkdir -p ~/doc/git
+mkdir -p ~/doc/src/git
 mkdir -p ~/pic/scsx
 mkdir -p ~/misc/run
 mkdir -p ~/misc/bin
@@ -42,7 +42,7 @@ echo "[*] Installing vim-plug"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 echo "[*] Making directories"
-cd ~/doc/git
+cd ~/doc/src/git
 echo "[*] Cloning and installing Suckless software"
 git clone https://github.com/keeganjk/dwm
 git clone https://github.com/keeganjk/st-luke
@@ -52,9 +52,9 @@ cd st-luke; sudo make clean install && cd ..
 cd dmenu; sudo make clean install && cd ..
 echo "[*] Cloning and installing dotfiles with symlink"
 git clone https://github.com/keeganjk/dotfiles
-ln -s ~/doc/git/dotfiles/home/conf ~/conf
-ln -s ~/doc/git/dotfiles/home/.config ~/.config
-ln -s ~/doc/git/dotfiles/home/.zshenv ~/.zshenv
+ln -s ~/doc/src/git/dotfiles/home/conf ~/conf
+ln -s ~/conf ~/.config
+ln -s ~/doc/src/git/dotfiles/home/.zshenv ~/.zshenv
 echo "[*] Installing zsh prompt"
 mkdir -p ~/conf/zsh/prompts
 cd ~/conf/zsh/prompts
