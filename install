@@ -24,10 +24,12 @@ yay
 echo "[*] Installing other packages"
 yay -S wget make gcc dunst libnotify slock zsh zsh-autosuggestions zsh-syntax-highlighting xdg-user-dirs sxhkd mpc mpdscribble xdotool maim xorg-xsetroot xclip ncmpcpp mpd neovim ranger pcmanfm sxiv ibus ibus-mozc texlive-most texlive-lang biber xorg-server xorg-xinit xf86-video-intel mesa xf86-video-amdgpu zathura zathura-djvu zathura-pdf-mupdf 
 man-db man-pages texinfo checkupdates+aur sysstat reflector udisks2 mpv python-pip terminus-font-td1-otb ttf-kochi-substitute siji-git xorg-xev gcolor2 bc otf-latinmodern-math qutebrowser youtube-dl noto-fonts alsa-utils ibus-qt ttf-fira-code xorg-xfd acpi xorg-xkill ntfs-3g ttf-joypixels net-tools tlp hsetroot picom libxft-bgra ttf-symbola
-echo "[*] Enabling systemd services"
+echo "[*] Configuring systemd services"
 sudo systemctl enable --now iwd.service
 sudo systemctl enable --now tlp.service
 sudo systemctl enable --now systemd-resolved.service
+sudo systemctl mask --now systemd-rfkill.service
+sudo systemctl mask --now systemd-rfkill.socket
 cd /tmp
 echo "[General]" > main.conf
 echo "EnableNetworkConfiguration=true" >> main.conf
